@@ -20,7 +20,7 @@ namespace BowlingClassLibrary.UnitTests
         {
             var player = new Player("Clara");
 
-            Assert.Equal(0, player.Round._personScore);
+            Assert.Equal(0, player.Round.personScore);
         }
     }
 }

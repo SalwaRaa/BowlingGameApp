@@ -7,7 +7,7 @@ namespace BowlingClassLibrary
         private int[] rolls = new int[21];
         private int[] frame = new int[10];
         int currentRoll = 0;
-        public int _personScore;
+        public int personScore;
 
         private bool IsSpare(int frameIndex)
         {
@@ -22,7 +22,7 @@ namespace BowlingClassLibrary
         public void Roll(int pins)
         {
             rolls[currentRoll++] = pins;
-            _personScore += pins;
+            personScore += pins;
         }
 
         public void Roll(int[] pins)
@@ -62,7 +62,7 @@ namespace BowlingClassLibrary
 
         public int PersonScore()
         {
-            return _personScore;
+            return personScore;
         }
 
     }
