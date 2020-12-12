@@ -1,28 +1,13 @@
 ﻿using System.Collections.Generic;
 namespace BowlingClassLibrary
 {
- public class Player
-
-{
-    public string Name;
-    public int Score;
-}
-public class BowlingGame
-    {
-        public List<Player> PlayerList = new List<Player>();
-        public Player CurrentPlayer;
-
-        public void StartBowlingGame(int players)
-        {
-
-        }
-    }
+ 
     public class Round
     {
         private int[] rolls = new int[21];
         private int[] frame = new int[10];
         int currentRoll = 0;
-        private int _personScore;
+        public int _personScore;
 
         private bool IsSpare(int frameIndex)
         {

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Xunit;
 
 
@@ -73,8 +74,5 @@ namespace BowlingClassLibrary.UnitTests
             should_Roll_Many(12, 10);
             Assert.Equal(300, r.Score());
         }
-
-        
-
     }
 }
